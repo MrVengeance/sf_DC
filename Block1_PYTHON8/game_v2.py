@@ -29,8 +29,7 @@ def random_predict(number:int=np.random.randint(1, 101)) -> int:
         else:
             print(f"Компьютер угадал число за {count} попыток. Это число {number}")
             break #конец игры выход из цикла
-            
-        
+                   
     return count
 
-print(random_predict())
+random_predict()
