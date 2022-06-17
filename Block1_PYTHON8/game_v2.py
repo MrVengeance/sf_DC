@@ -5,17 +5,16 @@
 import numpy as np
 
 
-def random_predict(number: int=np.random.randint(1, 101)) -> int:
+def random_predict():
     """Рандомно угадываем число
-    Args:
-        number: Загаданное число. По умолчанию рандомно загадывается \
-            компьютером в диапазоне 1-100.
     Returns:
         int: Число попыток и само число
     """
 
     count = 0
     mn, mx = 1, 100
+    number = np.random.randint(mn, mx+1)  # Загаданное число.\
+    # По умолчанию рандомно загадывается компьютером в диапазоне mn-mx.
 
     while True:
         count += 1
