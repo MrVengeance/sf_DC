@@ -15,6 +15,15 @@ def random_predict():
     mn, mx = 1, 100
     number = np.random.randint(mn, mx+1)  # Загаданное число.\
     # По умолчанию рандомно загадывается компьютером в диапазоне mn-mx.
+    if number == mn:
+        print(f"Компьютер угадал число за {1} попытку. \
+        Это число {number}")
+        return 1
+
+    if number == mx:
+        print(f"Компьютер угадал число за {1} попытку. \
+        Это число {number}")
+        return 1
 
     while True:
         count += 1
