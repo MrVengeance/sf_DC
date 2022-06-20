@@ -54,7 +54,7 @@ def score_game(random_predict) -> int:
     """
 
     count_ls = []
-    for i in range(1, 101):
+    for i in range(1, 1001):
         count_ls.append(random_predict())
 
     score = int(np.mean(count_ls))  # находим среднее количество попыток
